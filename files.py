@@ -1,0 +1,1 @@
+print(open("set2.py", "r"))
