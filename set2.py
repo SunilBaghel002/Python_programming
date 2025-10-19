@@ -1,12 +1,12 @@
-# a=3+5
-# print(a)
+a=3+5
+print(a)
 
-# b=input("enter a number ")
-# print(b)
-# b=int(b)
-# print(type(b))
-# b=b%2
-# print(b)
+b=input("enter a number ")
+print(b)
+b=int(b)
+print(type(b))
+b=b%2
+print(b)
 
 c=34
 b=80
