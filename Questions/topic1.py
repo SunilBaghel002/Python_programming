@@ -1,4 +1,4 @@
-# Write a Python program to print: Hello, Sunil! Welcome to Python.
+# Write a Python program to print: Hello, Sunil! Welcome to Python. EASY
 print("Hello, Sunil! Welcome to Python.")
 
 # Take two inputs from the user (your name and age) and display them in a formatted sentence.
@@ -14,7 +14,7 @@ d = True
 e = [1, 2, 3]
 print(type(a), type(b), type(c), type(d), type(e))
 
-#Take a user’s full name as input and print it in: Uppercase, Lowercase, Title case
+#Take a user’s full name as input and print it in: Uppercase, Lowercase, Title case MODERATE
 
 full_name = input("Enter your full name : ")
 print(f"UpperCase of {full_name} is", full_name.upper())
@@ -35,7 +35,7 @@ print(f"Product of {num1} and {num2} is {num1 * num2}")
 result_1 = float(num1 / num2)
 print(f"Division of {num1} and {num2} is {result_1}")
 
-
+# (HARD)
 # Take the user’s name and age as input and print how many years are left until they turn 100 years old.
 # Name and age are already take as input above
 remaining_age = 100 - age
