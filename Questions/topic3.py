@@ -63,3 +63,22 @@ y = y^x
 x = x^y
 
 print(f"After swapping : \n x - {x}\n y - {y}")
+
+# Use bitwise operators to check whether a given number is odd or even
+def check_even_odd(number):
+    if (number & 1) == 0:
+        print(f"{number} is even")
+    else:
+        print(f"{number} is odd")
+
+check_even_odd(7)
+
+# Given two numbers, perform and print results for all bitwise operations: AND (&), OR (|), XOR (^), Left shift (<< 1), Right shift (>> 1)
+bit_num1 = 5  #101
+bit_num2 = 7  #111
+
+print(f"Bitwise and of {bit_num1} and {bit_num2} is", bit_num1 & bit_num2)  #101 -5
+print(f"Bitwise or of {bit_num1} and {bit_num2} is", bit_num1 | bit_num2)
+print(f"Bitwise xor of {bit_num1} and {bit_num2} is", bit_num1 ^ bit_num2)
+print(f"Bitwise left shift of {bit_num1} and {bit_num2} is", bit_num1 << bit_num2)
+print(f"Bitwise right shift of {bit_num1} and {bit_num2} is", bit_num1 >> bit_num2)
