@@ -42,5 +42,17 @@ else:
 
 # Moderate Level
 # Remove Duplicates from a String: Input: "programming" → Output: "progamin"
-normal_str = "programming"
-normal_str.
+from collections import Counter
+
+my_string = "programming"
+counts = Counter(my_string)
+duplicate_chars = [char for char, count in counts.items() if count > 1]
+print(f"Duplicate characters: {duplicate_chars}")
+duplicate_string = ''
+for i in duplicate_chars:
+    duplicate_string += i
+    final_str = my_string.replace(duplicate_string, "")
+print(duplicate_string)
+
+
+print(final_str)
