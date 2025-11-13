@@ -95,4 +95,13 @@ if count > 1:
 compressed_str = ''
 for i in encoded_string:
     compressed_str += i
-print(compressed_str)
+print(f"Hence compressed string of {orginal_str} is {compressed_str}")
+
+# Title Case Converter (without using .title()) 
+title_str = "welcome to python world"
+spilt_title = title_str.split(" ")
+
+final_title = ""
+for i in spilt_title:
+    final_title += i.capitalize() + " "
+print(f"Hence, Titled sence without using .title {final_title}")
