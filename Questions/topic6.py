@@ -75,3 +75,24 @@ paragraph_counts = Counter(spilt_paragraph)
 print(paragraph_counts)
 
 # String Compression (Run-Length Encoding) Example: Input: "aaabbccddd", Output: "a3b2c2d3"
+orginal_str = "aaabbccddd"
+encoded_string = []
+count = 1
+    
+for i in range(1, len(orginal_str)):
+    if orginal_str[i] == orginal_str[i-1]:
+            count += 1
+    else:
+        encoded_string.append(orginal_str[i-1])
+        if count > 1:  
+            encoded_string.append(str(count))
+        count = 1
+    
+encoded_string.append(orginal_str[-1])
+if count > 1:
+    encoded_string.append(str(count))
+    
+compressed_str = ''
+for i in encoded_string:
+    compressed_str += i
+print(compressed_str)
