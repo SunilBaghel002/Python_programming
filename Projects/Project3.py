@@ -71,3 +71,5 @@ total_length = paragraph.split(" ")
 
 average_length = len(characters)/len(total_length) 
 print(f"Average word length is {average_length}")
+
+print("Sunil is coding!!")
